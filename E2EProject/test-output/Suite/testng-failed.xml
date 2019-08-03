@@ -9,7 +9,7 @@
     <classes>
       <class name="Academy.HomePage">
         <methods>
-          <include name="basePageNavigation" invocation-numbers="0"/>
+          <include name="basePageNavigation"/>
           <include name="initialize"/>
           <include name="teardown"/>
         </methods>
@@ -27,4 +27,15 @@
       </class> <!-- Academy.validateTitle -->
     </classes>
   </test> <!-- Validating title in the Page(failed) -->
+  <test thread-count="5" name="Validating navigation Bar(failed)">
+    <classes>
+      <class name="Academy.validateNavigationBar">
+        <methods>
+          <include name="initialize"/>
+          <include name="validateAppNavBar"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Academy.validateNavigationBar -->
+    </classes>
+  </test> <!-- Validating navigation Bar(failed) -->
 </suite> <!-- Failed suite [Suite] -->

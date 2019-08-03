@@ -24,7 +24,7 @@ public class base {
 
 		prop = new Properties();
 		FileInputStream fis = new FileInputStream(
-				"C:\\Users\\kanik\\Desktop\\Eclipse Projects\\E2EProject\\src\\main\\java\\resources\\data.properties");
+				"C:\\Users\\kanik\\git\\E2EProjectPractice1\\E2EProject\\src\\main\\java\\resources");
 
 		prop.load(fis);
 		String browserName = prop.getProperty("browser"); 
@@ -33,7 +33,7 @@ public class base {
 		if (browserName.equals("chrome")) {
 			// execute in chrome driver
 			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\kanik\\Desktop\\Manu\\Java Installations\\chromedriver_win32\\chromedriver.exe");
+					"C:\\Users\\kanik\\git\\E2EProjectPractice1\\E2EProject\\chromedriver_win32");
 			driver = new ChromeDriver();
 			
 
